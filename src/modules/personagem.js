@@ -1,24 +1,22 @@
 export class Personagem {
   nome;
-  vida;
-  mana;
+  vida = 100;
+  mana = 100;
   level;
-  classe;
+  tipo;
   descricao;
 
-  constructor(nome, vida, mana, level, classe, descricao) {
+  constructor(nome, level, tipo, descricao) {
     this.nome = nome;
-    this.vida = vida;
-    this.mana = mana;
     this.level = level;
-    this.classe = classe;
+    this.tipo = tipo;
     this.descricao = descricao;
   }
 
   obterTitulo() {
     if (this.level >= 5) {
-      return `${this.classe} Aventureiro `;
+      return `${this.tipo} Aventureiro `;
     }
-    return `${this.classe} Iniciante`;
+    return `${this.tipo} Iniciante`;
   }
 }
