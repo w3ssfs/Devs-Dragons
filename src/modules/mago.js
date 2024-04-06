@@ -15,9 +15,11 @@ export class Mago extends Personagem {
 
   obterTitulo() {
     if (this.levelMagico >= 20 && this.inteligencia >= 25) {
-      return `Mestre ${this.elementoMagico === "Trevas" ? "Das" : "Do"} ${
-        this.elementoMagico
-      }`;
+      return `Mestre ${
+        this.elementoMagico === "Trevas" || this.elementoMagico === "Luz"
+          ? "Das"
+          : "Do"
+      } ${this.elementoMagico}`;
     } else if (this.levelMagico >= 5 && this.inteligencia >= 5) {
       return `Dominador ${this.elementoMagico === "Trevas" ? "Das" : "Do"} ${
         this.elementoMagico
