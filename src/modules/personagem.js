@@ -3,7 +3,6 @@ export class Personagem {
   vida = 100;
   mana = 100;
   level;
-  descricao;
 
   constructor(nome, level) {
     this.nome = nome;
@@ -11,6 +10,6 @@ export class Personagem {
   }
 
   obterTitulo() {
-    return `${this.tipo} Iniciante`;
+    return `${this.constructor.tipo} Iniciante`;
   }
 }

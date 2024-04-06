@@ -1,7 +1,8 @@
 import { Personagem } from "./personagem.js";
 
 export class Arqueiro extends Personagem {
-  tipo = "Arqueiro";
+  static tipo = "Arqueiro";
+  static descricao = "Nunca se erra, quando atira com o coração!";
   destreza;
 
   constructor(nome, level, destreza) {
