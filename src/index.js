@@ -5,7 +5,7 @@ import { Mago } from "./modules/mago.js";
 import { Arqueiro } from "./modules/arqueiro.js";
 import { ArqueiroMago } from "./modules/arqueiro-mago.js";
 
-const magoLuna = new Mago("Luna", 4, "Fogo", 5, 5);
+const magoLuna = new Mago("Luna", 40, "Fogo", 5, 5);
 const magoJune = new Mago("June", 8, "Trevas", 130, 124);
 
 const guerreiroJota = new Guerreiro("Jota", 5, 2);
@@ -13,7 +13,7 @@ const guerreiroJota = new Guerreiro("Jota", 5, 2);
 
 const arqueiroWesley = new Arqueiro("Wesley", 15, 10);
 
-const arqueiroMagoWess = new ArqueiroMago("wess", 1, 60, "Gelo", 510, 102);
+const arqueiroMagoWess = new ArqueiroMago("wess", 10, 60, "Gelo", 510, 102);
 
 const personagens = [
   magoJune,
@@ -24,3 +24,5 @@ const personagens = [
 ];
 
 new PersonagemView(personagens).render();
+
+console.log(Personagem.verificarVencedor(arqueiroMagoWess, magoLuna));

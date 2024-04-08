@@ -20,11 +20,19 @@
   align-items: center;
 }
 
+.modal:hover {
+  cursor: pointer;
+}
+
 .modal-fechar-botao {
   position: absolute;
   right: 10px;
   top: 10px;
   font-size: 20px;
+}
+
+.modal-fechar-botao:hover {
+  cursor: pointer;
 }
 
 .fundo-modal {

@@ -41,11 +41,18 @@ header {
   padding: 8px 36px;
 }
 
+.botao-duelar:hover {
+  cursor: pointer;
+}
+
 .personagens {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   max-width: 1357px;
+}
+.personagem:hover {
+  cursor: crosshair;
 }
 
 .personagem {
