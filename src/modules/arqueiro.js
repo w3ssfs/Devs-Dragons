@@ -5,8 +5,8 @@ export class Arqueiro extends Personagem {
   static descricao = "Nunca se erra, quando atira com o coração!";
   destreza;
 
-  constructor(nome, level, destreza) {
-    super(nome, level);
+  constructor(nome, destreza) {
+    super(nome);
     this.destreza = destreza;
   }
 

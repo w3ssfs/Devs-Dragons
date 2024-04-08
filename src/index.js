@@ -25,4 +25,4 @@ const personagens = [
 
 new PersonagemView(personagens).render();
 
-console.log(Personagem.verificarVencedor(arqueiroMagoWess, magoLuna));
+console.log(arqueiroWesley);

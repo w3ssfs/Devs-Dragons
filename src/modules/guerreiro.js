@@ -5,8 +5,8 @@ export class Guerreiro extends Personagem {
   static descricao = "Vive por sua honra e coragem";
   forca;
 
-  constructor(nome, level, forca) {
-    super(nome, level);
+  constructor(nome, forca) {
+    super(nome);
     this.forca = forca;
   }
 
